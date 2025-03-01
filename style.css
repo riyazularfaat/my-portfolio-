@@ -1,0 +1,444 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(1, 1, 47);
+}
+nav{
+    display: flex;
+    background-color: rgb(1, 1, 47);
+    justify-content: space-between;
+    padding: 50px 100px 50px 100px;
+    align-items: center;
+}
+nav h2{
+    font-size: 30px;
+    font-style: bold;
+    color: blue;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    cursor: pointer;
+    background-color: orange;
+    padding: 10px;
+    border: none;
+}
+.nav-btn{
+    background-color: rgb(70, 30, 213);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    border: none;
+}
+.nav-btn:hover{
+    cursor: pointer;
+    background-color: orange;
+}
+/* nav section ended here */
+/* banner section started here */
+.banner{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 100px 50px 100px;
+    color: white;
+}
+.content h1, h2, h3, h4, article{
+    padding-bottom: 15px;
+    text-align: justify;
+}
+.content h4, h3{
+    color: gray;
+}
+.content h1{
+    font-size: 30px;
+    color: white;
+}
+#name{
+    color: orange;
+    font-style: italic;
+}
+#title{
+    color: aqua;
+}
+.banner-btn{
+    background-color: rgb(70, 30, 213);
+    text-align: center;
+    padding: 10px 50px;
+    border-radius: 15px;
+    color: white;
+    border: none;
+}
+.banner-btn:hover{
+    background-color: aquamarine;
+    cursor: pointer;
+    color: chocolate;
+}
+.profile{
+    padding-left: 200px;
+}
+.profile-pic{
+    height: 400px;
+    width: 300px;
+    border-radius: 50%;
+    border-style: solid double dashed;
+    border-color: rgb(63, 218, 20);
+    border-width: 2px;
+}
+
+/* banner section ended here */
+/* about section started here */
+.about{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 50px 50px 50px;
+    padding: 50px;
+    color: white;
+    text-align: justify;
+    box-shadow: rgba(15, 79, 106, 0.12) 0px 2px 4px 0px, rgba(58, 89, 102, 0.32) 0px 2px 16px 0px;
+}
+.about-content h1, p{
+    margin-bottom: 15px;
+}
+.my-rating{
+    padding-top: 40px;
+    text-align: right;
+}
+/* about section ended here */
+/* services section started here */
+.experience-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 20px 25px 50px 25px;
+    margin: 0px 50px 0px 50px;
+    color: white;
+    text-align: justify;
+    box-shadow: rgba(11, 136, 190, 0.12) 0px 2px 4px 0px, rgba(100, 125, 136, 0.32) 0px 2px 16px 0px;
+}
+.experience{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(220, 165, 165, 0.327) 0px 30px 60px -30px, rgba(25, 54, 84, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px 25px 0px 25px;
+}
+.exp-title{
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+.exp-list{
+    padding: 20px;
+    text-align: right;
+}
+.exp-list h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: left;
+}
+.experiences{
+    margin-bottom: 30px;
+}
+ .exp-period {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+ }
+ .social-meadia{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 20px;
+    gap: 30px;
+}
+.social-meadia a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+ /* experience section ended here */
+ /* education section started here */
+.education{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(220, 165, 165, 0.327) 0px 30px 60px -30px, rgba(25, 54, 84, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px 25px 15px 25px;
+}
+.edu-title{
+    font-size: 25px;
+}
+ .education table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 14px;
+    font-family: sans-serif;
+    min-width: 550px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.education thead tr {
+    background-color: #00987abc;
+    color: #ffffff;
+    text-align: left;
+}
+.education th, td {
+    padding: 12px 15px;
+}
+.education tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.education tbody tr:nth-of-type(even) {
+    background-color: #a3e4e5eb;
+    color: black;
+}
+
+.education tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+/* education section ended here */
+/* skill section started here */
+.skills{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(204, 106, 106, 0.459) 0px 30px 60px -30px, rgba(25, 54, 84, 0.35) 0px -2px 6px 0px inset;
+    padding: 25px;
+}
+.skill-title{
+    font-size: 25px;
+}
+
+h2 {
+    border-bottom: 1px solid #2c3e50;
+    padding-bottom: 10px;
+}
+.skill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background: black;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+.progress {
+    height: 100%;
+    background: cyan;
+}
+
+/* skill section ended here */
+/* services section started here  */
+.service{
+    padding: 20px 25px 50px 50px;
+    background-color: rgb(88, 201, 226);
+    margin: 0px 50px 0px 50px;
+    color: white;
+    text-align: justify;
+    box-shadow: rgba(11, 136, 190, 0.12) 0px 2px 4px 0px, rgba(100, 125, 136, 0.32) 0px 2px 16px 0px;
+}
+.service-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+.service-box{
+    margin-top: 10px;
+    padding: 20px;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: rgb(166, 149, 231);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.service-box:hover{
+    margin-top: 10px;
+    padding: 20px;
+    cursor: pointer;
+    text-align: justify;
+    border-radius: 10px;
+    background-color: rgb(166, 149, 231);
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.service-box h1{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+.center{
+    font-size: 50px;
+    text-align: center;
+}
+/* services section ended here */
+/* porfolio section started here  */
+.my-portfolio {
+    padding: 50px 100px;
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+
+.my-portfolioh h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 2%;
+    font-size: 15px;
+    color: gray;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.menu-item {
+    margin: 0 1%;
+    padding: 1% 2%;
+    background-color: #333333;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.menu-item.active {
+    background-color: orange;
+}
+
+.case-studies {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.case-study {
+    padding: 2%;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+}
+
+.case-study img {
+    border-radius: 1%;
+    margin-right: 2%;
+    height: 300px;
+    width: 400px;
+}
+
+.case-study-text {
+    text-align: justify;
+}
+
+.case-study h2 {
+    font-size: 12px;
+    color: var(--secondary-color);
+    margin-bottom: 2%;
+}
+
+.case-study h3 {
+    font-size: 20px;
+    margin-bottom: 2%;
+}
+
+.case-study p {
+    font-size: 1em;
+    color: #bbbbbb;
+    margin-bottom: 10px;
+}
+
+/* porfolio section ended here */
+/* contact section started here */
+.contact{
+    padding: 0px 50px 50px 50px;
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+}
+.contact-title{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+#contact-desc{
+    margin-bottom: 30px;
+}
+.contacts{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+    column-gap: 20px;
+}
+.e-mail{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    padding: 20px;
+    background: rgb(19, 35, 71);
+    border-bottom: 1px solid rgb(120, 101, 255);
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+}
+.e-mail h1{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-form{
+    background: #132347;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 100px;
+    width: 500px;
+    color: white;
+}
+form{
+    height: 350px;
+}
+.contact-form input, textarea {
+    background: #102048;
+    border: 2px solid rgba(11, 136, 145, .397);
+    border-radius: 10px;
+    font-size: .8rem;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 10px 15px;
+    width: 400px;
+    color: white;
+}
+.submit-btn {
+    background: #7865ff;
+    border: none;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 7px 25px;
+    color: white;
+}
+.submit-btn:hover {
+    background: orange;
+    cursor: pointer;
+}
+
+footer{
+    background-color: rgb(60, 170, 221);
+    color: white;
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+}
