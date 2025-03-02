@@ -11,7 +11,7 @@ nav{
     display: flex;
     background-color: rgb(1, 1, 47);
     justify-content: space-between;
-    padding: 50px 100px 50px 100px;
+    padding: 3% 8% 3% 8%;
     align-items: center;
 }
 nav h2{
@@ -50,7 +50,7 @@ nav ul li a:hover{
 .banner{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 0px 100px 50px 100px;
+    padding: 0% 8% 3% 8%;
     color: white;
 }
 .content h1, h2, h3, h4, article{
@@ -61,7 +61,7 @@ nav ul li a:hover{
     color: gray;
 }
 .content h1{
-    font-size: 30px;
+    font-size: clamp(1.5rem, 8vw, 2rem);
     color: white;
 }
 #name{
@@ -111,8 +111,13 @@ nav ul li a:hover{
     margin-bottom: 15px;
 }
 .my-rating{
-    padding-top: 40px;
+    padding-top: 3%;
     text-align: right;
+}
+.social-media{
+    display: flex;
+    gap: 20px;
+    justify-content: right;
 }
 /* about section ended here */
 /* services section started here */
@@ -152,19 +157,7 @@ nav ul li a:hover{
     justify-content: space-between;
     margin-bottom: 10px;
  }
- .social-meadia{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
-    padding: 20px;
-    gap: 30px;
-}
-.social-meadia a{
-    text-decoration: none;
-    color: white;
-    margin-right: 20px;
-    font-size: 20px;
-}
+
 
  /* experience section ended here */
  /* education section started here */
@@ -240,7 +233,7 @@ h2 {
 /* skill section ended here */
 /* services section started here  */
 .service{
-    padding: 20px 25px 50px 50px;
+    padding: 2% 2.5% 3% 3%;
     background-color: rgb(88, 201, 226);
     margin: 0px 50px 0px 50px;
     color: white;
@@ -442,3 +435,243 @@ footer{
     align-items: center;
     padding: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    nav{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      column-gap: 10px;
+    }
+    .nav-btn{
+      margin-top: 20px;
+    }
+    nav h2{
+      margin-bottom: 20px;
+    }
+    .banner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .content{
+      margin-bottom: 2%;
+    }
+    .profile{
+        padding-left: 0px;
+    }
+    .profile-pic{
+      height: auto;
+      width: 200px;
+      border-radius: 15px;
+      margin: 20px 0px
+    }
+    .about{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 3% 3% 3%;
+      padding: min(3em, 3%);
+    }
+    .my-rating{
+      text-align: center;
+    }
+    .social-media{
+      justify-content: center;
+    }
+    .experience-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 3% 3% 3%;
+      padding: min(3em, 3%);
+    }
+    .experience{
+      padding: 2% 2% 0% 2%;
+    }
+    .exp-title{
+        padding-bottom: 20px;
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+    .exp-list h1{
+        font-size: clamp(1.5rem, 8vw, 2rem);
+        text-transform: uppercase;
+        text-align: left;
+    }
+    .education{
+        padding: min(3em, 3%);
+    }
+    .edu-title{
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+     .education table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: climb(0.9rem, 8vw, 1.2rem);
+        font-family: sans-serif;
+        min-width: 450px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .education thead tr {
+        background-color: #00987abc;
+        color: #ffffff;
+        text-align: left;
+    }
+    .service{
+        padding: min(em, 3%);
+    }
+    .service-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .case-study{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        background: #132347;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 2%;
+        margin-top: 2%;
+        width: 450px;
+        
+        color: white;
+    }
+    form {
+        height: 400px;
+    }
+}
+
+
+@media only screen and (max-width: 921px) {
+  nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    column-gap: 10px;
+  }
+  .nav-btn{
+    margin-top: 20px;
+  }
+  nav h2{
+    margin-bottom: 20px;
+  }
+  .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .content{
+    margin-bottom: 2%;
+  }
+  .profile{
+      padding-left: 0px;
+  }
+  .profile-pic{
+    height: auto;
+    width: 300px;
+    border-radius: 15px;
+    margin: 20px 0px
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 3% 3% 3%;
+    padding: min(3em, 3%);
+  }
+  .my-rating{
+    text-align: center;
+  }
+  .social-media{
+    justify-content: center;
+  }
+  .experience-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 0px 3% 3% 3%;
+      padding: min(3em, 3%);
+    }
+    .experience{
+      padding: 2% 2% 0% 2%;
+    }
+    .education{
+        padding: min(3em, 3%);
+    }
+    .edu-title{
+        font-size: clamp(1.5rem, 8vw, 2rem);
+    }
+     .education table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: climb(0.9rem, 8vw, 1.2rem);
+        font-family: sans-serif;
+        min-width: 450px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .education thead tr {
+        background-color: #00987abc;
+        color: #ffffff;
+        text-align: left;
+    }
+    .service{
+        padding: min(em, 3%);
+    }
+    .service-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .case-study{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        background: #132347;
+        display: flex;
+        align-items: center;
+        border-radius: 10px;
+        padding: 2%;
+        margin-top: 2%;
+        width: 450px;
+        
+        color: white;
+    }
+    form {
+        height: 400px;
+    }
+} 
